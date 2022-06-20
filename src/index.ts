@@ -39,7 +39,9 @@ app.post('/upload', async (req, res) => {
 		await removeTempFile(tempPath);
 		res.send();
 	} catch (err) {
-		console.error(err);
+		res
+			.status(400)
+			.json({ msg: 'the file has not been stranscoded or removed' });
 	}
 });
 
