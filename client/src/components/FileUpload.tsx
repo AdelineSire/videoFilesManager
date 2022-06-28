@@ -1,4 +1,4 @@
-import { useState, useRef, SetStateAction, FC, Dispatch } from 'react';
+import { useState, useRef, FC, Dispatch } from 'react';
 
 import Row from 'react-bootstrap/Row';
 import Form from 'react-bootstrap/Form';
@@ -89,7 +89,7 @@ const FileUpload: FC<IFileUpload> = ({ uploaded, setUploaded }) => {
 				</Form.Group>
 				<Progress percentage={uploadPercentage} />
 				<Button type='submit' variant='primary' className='m-3 p-2'>
-					Upload
+					Télécharger
 				</Button>
 			</Form>
 		</Row>
